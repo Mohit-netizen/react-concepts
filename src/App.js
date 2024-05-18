@@ -3,16 +3,28 @@ import './App.css';
 import Header from './Header';
 import { Button, Card, Col ,Container, Row } from 'react-bootstrap';
 import { blog } from './Data/blog';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons/faWhatsapp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-
+ 
 function App() {
-  
+  let dispalyData=()=>{
+    alert("stay work hard")
+  }
+   let addData=(a,b)=>{
+    console.log(a,b)
+   }
+
+
   return (
     <div className="App">
       <Header email="ws@gmail.com" >
         <h1>welcome to header section2</h1>
+        <FontAwesomeIcon icon={faWhatsapp} className="text-danger" />
       </Header>
+      <button onClick={dispalyData}>click</button>
+      <button onClick={()=>addData(10,30)}>click2</button>
       {/* <Container>
       <Row>
         <Col className='col-12 text-center py-4'>

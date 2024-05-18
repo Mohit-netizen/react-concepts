@@ -1,9 +1,9 @@
+                                                                   <!-- <Header email="ws@gmail.com" > -->
+
+
+
+                                                                    <!-- Using Children props -->
 <!-- <Header email="ws@gmail.com" >
-
-
-
-<!-- Using Children props -->
-<Header email="ws@gmail.com" >
         <h1>welcome to header section2</h1>
       </Header>
       result
@@ -17,11 +17,11 @@
       return 
        <h1>
        Welcome to Header Section {email}{children}
-      </h1>
+      </h1> -->
 
-<!-- how to pass object to child component -->
+                                                                <!-- how to pass object to child component -->
 
-<Container>
+<!-- <Container>
       <Row>
         {blog.map((v,i)=> {
         return(
@@ -57,4 +57,39 @@ function ProductItems({pitems}){
    </Col>
   )
 } -->
+
+                                                                  <!-- How to add font awesome icon -->
+<!-- <Header email="ws@gmail.com" >
+        <h1>welcome to header section2</h1>
+        <FontAwesomeIcon icon={faWhatsapp} className="text-danger" />
+      </Header> -->
+
+                                                                  <!-- how to use setup tailwind css -->
+
+<!-- follow https://tailwindcss.com/docs/guides/create-react-app -->
+
+                                                                     <!-- How to import css & images in react   -->
+<!-- import logo from './logo.svg'; -->
+
+                                                                     <!-- Events handing -->
+<!-- let dispalyData=()=>{
+    alert("stay work hard")
+  }
+  return 
+    <div className="App">
+      
+      <button onClick={dispalyData}>click</button> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
