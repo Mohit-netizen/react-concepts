@@ -1,4 +1,4 @@
-                                                                   <!-- <Header email="ws@gmail.com" > -->
+                                                                    <!-- <Header email="ws@gmail.com" > -->
 
 
 
@@ -19,7 +19,7 @@
        Welcome to Header Section {email}{children}
       </h1> -->
 
-                                                                <!-- how to pass object to child component -->
+                                                              <!-- how to pass object to child component -->
 
 <!-- <Container>
       <Row>
@@ -58,20 +58,20 @@ function ProductItems({pitems}){
   )
 } -->
 
-                                                                  <!-- How to add font awesome icon -->
+                                                                         <!-- How to add font awesome icon -->
 <!-- <Header email="ws@gmail.com" >
         <h1>welcome to header section2</h1>
         <FontAwesomeIcon icon={faWhatsapp} className="text-danger" />
       </Header> -->
 
-                                                                  <!-- how to use setup tailwind css -->
+                                                                         <!-- how to use setup tailwind css -->
 
 <!-- follow https://tailwindcss.com/docs/guides/create-react-app -->
 
-                                                                     <!-- How to import css & images in react   -->
+                                                              <!-- How to import css & images in react   -->
 <!-- import logo from './logo.svg'; -->
 
-                                                                     <!-- Events handing -->
+                                                                                       <!-- Events handing -->
 <!-- let dispalyData=()=>{
     alert("stay work hard")
   }
@@ -80,11 +80,72 @@ function ProductItems({pitems}){
       
       <button onClick={dispalyData}>click</button> -->
 
+                                                                                   <!-- parameter function -->
+<!-- let addData=(a,b)=>{
+    console.log(a,b)
+   }
+   <button onClick={()=>addData(10,30)}>click2</button> -->
+
+                                                                            <!-- Hooks(usestate in hooks) -->
+<!-- let [count,setCount] =useState(1)
+
+   let display=()=>{
+    setCount(count+1)
+    console.log(count)
+    
+   }
+
+   <button onClick={display}>{count}click0</button> -->
+
+                                                            <!-- Conditional statements(if ealse statement) -->
+<!-- let temlate='';
+   let [count,setCount] =useState(1)
+   let[pshow,setpshow]=useState(false)
+
+   if (pshow){
+    temlate= <><button onClick={()=>setpshow(!pshow)}>hide</button>
+    <p>welcome to ws</p></>
+   }
+   else{
+    temlate= <button onClick={()=>setpshow(!pshow)}>show</button>
+   }
+    return (
+    <div className="App">
+      <Header email="ws@gmail.com" >
+        <h1>welcome to header section2</h1>
+        <FontAwesomeIcon icon={faWhatsapp} className="text-danger" />
+      </Header>
+      {temlate} -->
 
 
 
 
+                                                         <!-- ternary operator -->
+<!-- let [status,setstatus]=useState(false);
 
+  return (
+    <div className="App">
+      <button onClick={()=>setstatus(!status)}>
+        {(status ? 'hide' : 'show')}
+      </button>
+{(status) ?
+
+     <p>welcomm</p>
+     :
+     ''} -->
+
+                                                                <!-- Module style -->
+<!-- 3.33 -->
+
+                                                  <!-- show or hide password -->
+<!-- let [pstatus,setStatus]=useState(false);
+<input className={modul.margin} type={pstatus ? 'text' : 'password'} /> 
+<button onClick={()=>setStatus(!pstatus)}>
+  {pstatus ? 'hide' : 'show'}
+</button> -->
+
+
+                 <!-- Module style in a component -->
 
 
 

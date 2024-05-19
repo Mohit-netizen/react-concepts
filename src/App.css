@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.Header{
+  margin-top: 10;
+}
+
+.menu{
+  background-color: yellow;
+  width: 80%;
+  left: -100%;
+  position: fixed;
+  height: 100vh;
+  list-style: none;
+}
+.menu ul li{
+  list-style: none;
+  padding: 10px 0px;
+}
+.activemenu{
+ left:0%
+}
+.micon{
+  position: absolute;
+  right:10px
+
+}
