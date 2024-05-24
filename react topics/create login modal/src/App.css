@@ -1,0 +1,40 @@
+.modalOverLay{
+  width: 100%;
+  position: fixed;
+  display: none;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+} 
+.Modaldiv{
+  width: 320px;
+  height: 320px;
+  position: fixed;
+  left: 50%;
+  transition: 0.3%;
+  top: -500%;
+  background-color: white;
+  transform: translate(-50%,-50%);
+
+}
+.Modaldiv h3{
+  color: rgb(37, 101, 202);
+  text-align: center;
+  /* margin: auto; */
+}
+
+.Enquire{
+  position: fixed;
+  right:-3%;
+  top: 100px;
+  transform: rotate(90deg);
+}
+
+.modalShow{
+  display: block;
+}
+.Showmodal{
+  top: 50%;
+}
+.h3{
+  
+}
