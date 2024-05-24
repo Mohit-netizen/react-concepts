@@ -145,7 +145,7 @@ function ProductItems({pitems}){
 </button> -->
 
 
-                 <!-- Module style in a component -->
+                                                                        <!-- responsive menu -->
 
 
 
