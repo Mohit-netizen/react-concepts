@@ -1,23 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import { questions } from './Data/faqQuestions';
+import { useState } from 'react';
 
 function App() {
+  let [showAns,setShowAns]=useState(questions[0].id)
   return (
     <div className="App">
       <div className='faq'>
         <h1>Frequently asked quations</h1>
         <div className="faqouter">
-          <div className="faqitems">
-            <h2>"sunt aut facere repellat provident occaecati?"</h2>
-            <p>quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-1	          </p>
+
+        {questions.map((faqItems, i) => {
+  return (
+    <div className="faqItems" key={i}>
+      <h2 onClick={()=>setShowAns(faqItems.id)}>{faqItems.question}</h2>
+      <p className={showAns==faqItems.id ? 'activeAns' : ''}>{faqItems.answer}</p>
+    </div>
+  )
+})}
+
+
 
           </div>
         </div>
       </div>
       
-    </div>
-  );
+  
+  )
 }
 
 export default App;
